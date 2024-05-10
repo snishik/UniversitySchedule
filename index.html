@@ -1,0 +1,62 @@
+<!--
+ * CSCI 1170: Introduction to Web Design and Development
+ * Fall 2023
+ *
+ * This markup file contains the starting code for Assignment 4.
+ * 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A4: Data from JSON Data Source</title>
+	<script src="./js/data-school.js"></script>
+	<!-- link to the main CSS file -->
+	<link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+	<header id="header">
+        <!-- university-logo image downloaded from URL [https://www.dal.ca/about-dal/history-tradition/logo-seal.html]  Date accessed: December 04, 2023. -->
+        <section class="nav-container">
+            <img id="university-logo" src="./img/university-logo.png" alt="university logo">
+            <input id="search-input" type="text" placeholder="Search by course name ">
+        </section>
+
+       
+    </header>
+
+    <!-- the general layout of the page has been taken from Assignment 3 -->
+	<nav id="primary-nav">
+		<ul class="nav-links">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Courses</a></li>
+			<li><a href="#">Schedule</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<section id="schoolDetails">
+    </section>
+
+	<footer id="footer">
+        <nav id="secondary-nav">
+            <ul id="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </nav>
+        <br>
+        <p>250 University Avenue</p>   
+        <p>Halifax, NS M3H 6T5</p>   
+        <br> 
+        <p> &copy; 2023 Dalhousie University</p>
+    </footer>	
+	<script src="./js/script.js"></script>
+</body>
+
+</html>

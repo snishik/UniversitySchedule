@@ -1,0 +1,329 @@
+/*
+ * CSCI 1170: Introduction to Web Design and Development
+ * Fall 2023
+ *
+ * This main styles file is to be used to style markup for Assignment 4.
+ * 
+ */
+
+
+
+/* fonts used in CSS for styling on the website used from: googlefonts.com URL[https://fonts.google.com/specimen/Montserrat?query=mon] Date accessed: December 04, 2023. */
+body {
+  background-color: #F1FAEE;
+  font-family: 'Montserrat', sans-serif;
+  width: 80vw;
+  margin: auto;
+}
+
+#university-logo {
+  width: 172px;
+  height: 48px;
+  margin: 10px;
+
+}
+
+.nav-links>li {
+  display: inline-block;
+  padding: 10px;
+
+}
+
+.nav-links {
+  background: #153347;
+  color: #F1FAEE;
+  margin: 0;
+  border-radius: 0px 0px 9px 9px;
+}
+
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 1px solid #457B9D;
+  box-shadow: 0px 0px 10px 2px;
+  overflow: hidden;
+  background-color: white;
+
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#search-input {
+  margin-right: 10px;
+  height: 25px;
+  width: 200px;
+  font-size: medium;
+  border-radius: 10px;
+
+}
+
+#schoolDetails{
+  height: 60vh;
+  overflow: scroll;  
+}
+
+#title-heading {
+  text-align: center;
+  color: #1D3557;
+}
+
+h2 {
+  color: #1D3557;
+  padding-left: 40px;
+
+}
+
+#course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+}
+
+#course-list .course {
+  width: 300px;
+  margin: 10px;
+  border: 2px solid #153347;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px;
+  padding: 10px;
+  background-color: #457B9D;
+  color: #F1FAEE;
+}
+
+a {
+  text-decoration: none;
+  color: #F1FAEE;
+
+}
+.file-details a {
+  
+  color: #E63946;
+  text-decoration: underline;
+
+}
+.file-details a:hover {
+  color: #457B9D;
+
+}
+
+a:hover {
+  color: yellow;
+
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 1px solid #457B9D;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px;
+  overflow: hidden;
+  background-color: white;
+
+
+
+}
+
+#footer-links {
+  background: #153347;
+  color: #F1FAEE;
+  margin: 0;
+  border-radius: 9px 9px 0px 0px;
+  text-align: right;
+
+
+}
+
+#footer-links>li {
+  display: inline-block;
+  padding: 10px;
+}
+
+p {
+  margin: 0px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  color: #1D3557;
+}
+
+
+
+@media screen and (max-width: 960px) {
+body {
+    width: 100vw;
+}
+
+#title-heading {
+    text-align: left;
+    color: #E63946;
+    padding-left: 40px;
+}
+.nav-links{
+    text-align: center;
+}
+
+#footer {
+    border-radius: 15px 15px 0px 0px ;
+}
+#footer-links{
+    text-align: center;
+}
+
+
+}
+
+@media screen and (max-width: 840px) {
+  .nav-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      width: 100%;
+  }
+  #search-input {
+      margin: 10px;
+      height: 25px;
+      width: 80%;
+      font-size: medium;
+      border-radius: 10px;
+  
+  }
+  .nav-links>li {
+      display: flex;
+      justify-content: start;
+      padding: 5px;
+  }
+  
+  #footer-links>li {
+      display: flex;
+      justify-content: end;
+      padding: 5px;
+  }
+  #title-heading {
+      text-align: left;
+      color: #1D3557;
+      padding-left: 40px;
+  }
+  h2, p {
+      color: #E63946;
+  
+  }
+  .file-details h2{
+    color: #E63946;
+  }
+
+  .file-details p{
+    color: #1D3557;
+  }
+
+  .file-details a {
+    color:  #457B9D;
+    text-decoration: underline;
+  
+  }
+  .file-details a:hover {
+    color:  black;
+  
+  }
+ 
+}
+
+ table {
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid lightgray;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 840px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+/* general styling */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
